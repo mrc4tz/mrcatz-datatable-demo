@@ -1,6 +1,6 @@
 # MrCatz DataTable — Demo
 
-Live demo of [mrcatz/datatable](https://github.com/mrcatz/datatable) package showcasing all features with a Product Management page.
+Live demo of [mrcatz/datatable](https://github.com/mrcatz/datatables) package showcasing all features with a Product Management page.
 
 ## Features Demonstrated
 
