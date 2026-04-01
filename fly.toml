@@ -1,0 +1,18 @@
+app = "mrcatz-datatable-demo"
+primary_region = "sin"
+
+[build]
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+[env]
+  APP_ENV = "production"
+  APP_DEBUG = "false"
+  APP_URL = "https://mrcatz-datatable-demo.fly.dev"
+  DB_CONNECTION = "sqlite"
+  DB_DATABASE = "/app/database/database.sqlite"
