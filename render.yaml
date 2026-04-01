@@ -1,0 +1,16 @@
+services:
+  - type: web
+    runtime: docker
+    name: mrcatz-datatables-demo
+    plan: free
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_URL
+        value: https://mrcatz-datatables-demo.onrender.com
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: DB_DATABASE
+        value: /app/database/database.sqlite

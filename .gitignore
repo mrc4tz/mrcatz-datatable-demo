@@ -5,6 +5,8 @@
 .env.production
 .phpactor.json
 .phpunit.result.cache
+.htaaccess
+.render.yaml
 /.fleet
 /.idea
 /.nova
