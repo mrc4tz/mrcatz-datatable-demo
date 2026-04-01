@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="flex-none gap-2">
-            <a href="https://github.com/mrcatz/datatables" target="_blank" class="btn btn-ghost btn-sm gap-1 text-xs">
+            <a href="https://github.com/mrc4tz/mrcatz-datatables" target="_blank" class="btn btn-ghost btn-sm gap-1 text-xs">
                 <span class="material-icons text-sm">code</span>
                 GitHub
             </a>
