@@ -1,4 +1,4 @@
-app = "mrcatz-datatable-demo"
+app = "mrcatz-dt-demo"
 primary_region = "sin"
 
 [build]
@@ -13,6 +13,6 @@ primary_region = "sin"
 [env]
   APP_ENV = "production"
   APP_DEBUG = "false"
-  APP_URL = "https://mrcatz-datatable-demo.fly.dev"
+  APP_URL = "https://mrcatz-dt-demo.fly.dev"
   DB_CONNECTION = "sqlite"
   DB_DATABASE = "/app/database/database.sqlite"
