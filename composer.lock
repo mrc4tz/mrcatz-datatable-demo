@@ -2989,7 +2989,7 @@
             "dist": {
                 "type": "path",
                 "url": "../mrcatz-datatable",
-                "reference": "4edf379aaabd599dfb9b5bb573f437114d16c4b9"
+                "reference": "3296734c84e4d8ce2e99eec3a3f1635060c84758"
             },
             "require": {
                 "laravel/framework": "^11.0|^12.0|^13.0",
