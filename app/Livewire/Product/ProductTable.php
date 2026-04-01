@@ -50,11 +50,12 @@ class ProductTable extends MrCatzDataTablesComponent
                 ]);
             })
             ->withColumnIndex('No')
-            ->withColumn('Product', 'name')
+            ->withColumn('Product', 'products.name')
             ->withColumn('SKU', 'sku')
             ->withCustomColumn('Category', function ($data, $i) {
-                $sub = $data->subcategory_name ? ' / ' . $data->subcategory_name : '';
-                return '<span class="text-xs">' . e($data->category_name) . '<span class="text-base-content/40">' . e($sub) . '</span></span>';
+
+                $sub =  $this->setSearchWord( $data->subcategory_name ? ' / ' . $data->subcategory_name : '');
+                return '<span class="text-xs">' .  $this->setSearchWord($data->category_name) . '<span class="text-base-content/40">' . $sub . '</span></span>';
             }, 'categories.name', true)
             ->withCustomColumn('Price', function ($data, $i) {
                 return '<span class="font-mono text-sm">Rp ' . number_format($data->price, 0, ',', '.') . '</span>';

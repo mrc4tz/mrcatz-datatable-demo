@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2f59981ba071d7674a592a3b6275c90",
+    "content-hash": "f1f0a3f825c58ead5922f7bec376f565",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -2990,12 +2990,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrc4tz/mrcatz-datatables.git",
-                "reference": "4edf379aaabd599dfb9b5bb573f437114d16c4b9"
+                "reference": "a9760c107d722448725c78ad1a4a07d82c0432ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrc4tz/mrcatz-datatables/zipball/4edf379aaabd599dfb9b5bb573f437114d16c4b9",
-                "reference": "4edf379aaabd599dfb9b5bb573f437114d16c4b9",
+                "url": "https://api.github.com/repos/mrc4tz/mrcatz-datatables/zipball/a9760c107d722448725c78ad1a4a07d82c0432ce",
+                "reference": "a9760c107d722448725c78ad1a4a07d82c0432ce",
                 "shasum": ""
             },
             "require": {
@@ -3047,7 +3047,7 @@
                 "issues": "https://github.com/mrc4tz/mrcatz-datatables/issues",
                 "source": "https://github.com/mrc4tz/mrcatz-datatables/tree/main"
             },
-            "time": "2026-04-01T14:26:20+00:00"
+            "time": "2026-04-01T18:14:26+00:00"
         },
         {
             "name": "nesbot/carbon",
