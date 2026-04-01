@@ -1,13 +1,16 @@
-# MrCatz DataTable — Demo
+# MrCatz DataTable — Live Demo
 
-Live demo of [mrcatz/datatable](https://github.com/mrc4tz/mrcatz-datatables) package showcasing all features with a Product Management page.
+**[View Live Demo](https://mrcatz-datatables-demo.xo.je)**
+
+Product Management demo showcasing all features of the [mrcatz/datatable](https://github.com/mrc4tz/mrcatz-datatables) package.
 
 ## Features Demonstrated
 
-- Multi-keyword search with relevance scoring
+- Multi-keyword search with relevance scoring & highlight
 - Dependent filters (Category → Subcategory)
-- Export to Excel & PDF with filter scope
-- Bulk select & delete with per-row control
+- Status filter (Active / Inactive)
+- Export to Excel & PDF with filter scope and count preview
+- Bulk select & delete with per-row control and modal confirmation
 - Expandable rows (product details inline)
 - Keyboard navigation (Arrow, Enter, Delete, Esc)
 - Column resize & reorder (drag & drop)
@@ -20,8 +23,8 @@ Live demo of [mrcatz/datatable](https://github.com/mrc4tz/mrcatz-datatables) pac
 ## Local Setup
 
 ```bash
-git clone <repo-url> mrcatz-demo
-cd mrcatz-demo
+git clone https://github.com/mrc4tz/mrcatz-datatable-demo.git
+cd mrcatz-datatable-demo
 composer install
 npm install
 cp .env.example .env
@@ -33,19 +36,13 @@ php artisan serve
 
 Open http://localhost:8000
 
-## Deploy to Railway
+## Built With
 
-1. Push to GitLab/GitHub
-2. Connect repo on [railway.app](https://railway.app)
-3. Add MySQL service
-4. Set environment variables:
-   ```
-   APP_KEY=base64:...
-   DB_CONNECTION=mysql
-   DB_HOST=<from railway>
-   DB_DATABASE=<from railway>
-   DB_USERNAME=<from railway>
-   DB_PASSWORD=<from railway>
-   ```
-5. Build command: `composer install && npm install && npm run build && php artisan migrate --seed --force`
-6. Start command: `php artisan serve --host=0.0.0.0 --port=$PORT`
+- [Laravel](https://laravel.com) 12
+- [Livewire](https://livewire.laravel.com) 3
+- [mrcatz/datatable](https://github.com/mrc4tz/mrcatz-datatables) — the package being demoed
+- [Tailwind CSS](https://tailwindcss.com) + [DaisyUI](https://daisyui.com)
+
+## License
+
+MIT
