@@ -53,7 +53,7 @@ class ProductTable extends MrCatzDataTablesComponent
                 return $data->category_id === 1;
             })
             ->withColumnIndex('No')
-            ->withColumn('Product', 'products.name', editable: true)
+            ->withColumn('Product', 'products.name', editable: true, rules: 'required|max:255')
             ->withColumn('SKU', 'sku')
         ->withCustomColumn('Category', function ($data, $i) {
 
