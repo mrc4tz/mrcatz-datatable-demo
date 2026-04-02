@@ -16,7 +16,7 @@ class ProductTable extends MrCatzDataTablesComponent
     public $bulkPrimaryKey = 'id';
     public $showBulkButton = true;
     public $expandableRows = true;
-    public $withLoading = true;
+    public $withLoading = false;
 
     public function configTable()
     {
@@ -49,25 +49,28 @@ class ProductTable extends MrCatzDataTablesComponent
                     'Created' => 'created_at',
                 ]);
             })
+            ->enableEditable(function ($data, $i, $column_key) {
+                return $data->category_id === 1;
+            })
             ->withColumnIndex('No')
-            ->withColumn('Product', 'products.name')
+            ->withColumn('Product', 'products.name', editable: true, rules: 'required|max:255')
             ->withColumn('SKU', 'sku')
-            ->withCustomColumn('Category', function ($data, $i) {
+        ->withCustomColumn('Category', function ($data, $i) {
 
-                $sub =  $this->setSearchWord( $data->subcategory_name ? ' / ' . $data->subcategory_name : '');
-                return '<span class="text-xs">' .  $this->setSearchWord($data->category_name) . '<span class="text-base-content/40">' . $sub . '</span></span>';
-            }, 'categories.name', true)
-            ->withCustomColumn('Price', function ($data, $i) {
-                return '<span class="font-mono text-sm">Rp ' . number_format($data->price, 0, ',', '.') . '</span>';
-            }, 'products.price', true)
-            ->withCustomColumn('Status', function ($data, $i) {
-                $badge = $data->status === 'active' ? 'badge-success' : 'badge-error';
-                $label = ucfirst($data->status);
-                return '<span class="badge ' . $badge . ' badge-sm text-white">' . $label . '</span>';
-            }, 'products.status', false)
-            ->withCustomColumn('Actions', function ($data, $i) {
-                return MrCatzDataTables::getActionView($data, $i, true, true);
-            });
+            $sub =  $this->setSearchWord( $data->subcategory_name ? ' / ' . $data->subcategory_name : '');
+            return '<span class="text-xs">' .  $this->setSearchWord($data->category_name) . '<span class="text-base-content/40">' . $sub . '</span></span>';
+        }, 'categories.name', true)
+        ->withCustomColumn('Price', function ($data, $i) {
+            return '<span class="font-mono text-sm">Rp ' . number_format($data->price, 0, ',', '.') . '</span>';
+        }, 'products.price', true)
+        ->withCustomColumn('Status', function ($data, $i) {
+            $badge = $data->status === 'active' ? 'badge-success' : 'badge-error';
+            $label = ucfirst($data->status);
+            return '<span class="badge ' . $badge . ' badge-sm text-white">' . $label . '</span>';
+        }, 'products.status', false)
+        ->withCustomColumn('Actions', function ($data, $i) {
+            return MrCatzDataTables::getActionView($data, $i, true, true);
+        });
     }
 
     public function setFilter()

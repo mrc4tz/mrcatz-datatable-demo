@@ -100,4 +100,10 @@ class ProductPage extends MrCatzComponent
             'text' => $count . ' products deleted!'
         ]);
     }
+
+    public function onInlineUpdate($rowData, $columnKey, $newValue)
+    {
+        Product::where('id', $rowData['id'])->update([$columnKey => $newValue]);
+        $this->dispatch_to_view(true, 'update');
+    }
 }
