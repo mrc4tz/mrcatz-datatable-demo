@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1f0a3f825c58ead5922f7bec376f565",
+    "content-hash": "e9432bb505ca101d12cf2147a5301ed4",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -2986,16 +2986,16 @@
         },
         {
             "name": "mrcatz/datatable",
-            "version": "dev-main",
+            "version": "v1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrc4tz/mrcatz-datatables.git",
-                "reference": "a9760c107d722448725c78ad1a4a07d82c0432ce"
+                "reference": "912ac18c8363d64b162bbc19bb8ec0a986cf9713"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrc4tz/mrcatz-datatables/zipball/a9760c107d722448725c78ad1a4a07d82c0432ce",
-                "reference": "a9760c107d722448725c78ad1a4a07d82c0432ce",
+                "url": "https://api.github.com/repos/mrc4tz/mrcatz-datatables/zipball/912ac18c8363d64b162bbc19bb8ec0a986cf9713",
+                "reference": "912ac18c8363d64b162bbc19bb8ec0a986cf9713",
                 "shasum": ""
             },
             "require": {
@@ -3003,11 +3003,14 @@
                 "livewire/livewire": "^3.0|^4.0",
                 "php": "^8.1"
             },
+            "require-dev": {
+                "orchestra/testbench": "^11.0",
+                "phpunit/phpunit": "^10.0|^11.0"
+            },
             "suggest": {
                 "barryvdh/laravel-dompdf": "Required for PDF export (^2.0|^3.0)",
                 "maatwebsite/excel": "Required for Excel export (^3.1)"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3045,9 +3048,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mrc4tz/mrcatz-datatables/issues",
-                "source": "https://github.com/mrc4tz/mrcatz-datatables/tree/main"
+                "source": "https://github.com/mrc4tz/mrcatz-datatables/tree/v1.2.5"
             },
-            "time": "2026-04-01T18:14:26+00:00"
+            "time": "2026-04-02T04:53:46+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -9396,9 +9399,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "mrcatz/datatable": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
