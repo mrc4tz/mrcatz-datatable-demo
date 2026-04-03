@@ -7,6 +7,8 @@
 .phpunit.result.cache
 .htaaccess
 .render.yaml
+/public/products
+/public/uploads
 /.fleet
 /.idea
 /.nova
