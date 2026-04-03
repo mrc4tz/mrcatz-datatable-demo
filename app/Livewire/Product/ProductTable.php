@@ -16,7 +16,7 @@ class ProductTable extends MrCatzDataTablesComponent
     public $bulkPrimaryKey = 'id';
     public $showBulkButton = true;
     public $expandableRows = true;
-    public $withLoading = false;
+    public $withLoading = true;
 
     public function configTable()
     {
@@ -42,17 +42,34 @@ class ProductTable extends MrCatzDataTablesComponent
             ->enableExpand(function ($data, $i) {
                 return MrCatzDataTables::getExpandView($data, [
                     'SKU' => 'sku',
+                    'Image' => ['type' => 'image', 'key' => 'image', 'width' => 80, 'height' => 80, 'previewClass' => 'rounded-lg shadow-sm', 'fallback' => 'name', 'urlPrefix' => 'public'],
                     'Category' => 'category_name',
                     'Subcategory' => 'subcategory_name',
                     'Stock' => 'stock',
                     'Description' => 'description',
                     'Created' => 'created_at',
+                    'Download' => [
+                        'type' => 'button',
+                        'label' => 'Download Image',
+                        'url' => $data->image ? asset($data->image) : '#',
+                        'icon' => 'download',
+                        'download' => true,
+                    ],
+                    'Source Code' => [
+                        'type' => 'link',
+                        'label' => 'View on GitHub',
+                        'url' => 'https://github.com/mrc4tz/mrcatz-datatable-demo',
+                        'icon' => 'info',
+                        'style' => 'info',
+                        'newTab' => true,
+                    ],
                 ]);
             })
             ->enableEditable(function ($data, $i, $column_key) {
                 return $data->category_id === 1;
             })
             ->withColumnIndex('No')
+            ->withColumnImage('Image', 'image', 36, 36, 'rounded-lg', 'name', urlPrefix: 'public', showOn: 'desktop')
             ->withColumn('Product', 'products.name', editable: true, rules: 'required|max:255')
             ->withColumn('SKU', 'sku')
         ->withCustomColumn('Category', function ($data, $i) {
