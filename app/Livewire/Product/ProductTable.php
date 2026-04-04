@@ -16,7 +16,7 @@ class ProductTable extends MrCatzDataTablesComponent
     public $bulkPrimaryKey = 'id';
     public $showBulkButton = true;
     public $expandableRows = true;
-    public $withLoading = true;
+    public $withLoading = false;
 
     public function configTable()
     {
@@ -42,7 +42,7 @@ class ProductTable extends MrCatzDataTablesComponent
             ->enableExpand(function ($data, $i) {
                 return MrCatzDataTables::getExpandView($data, [
                     'SKU' => 'sku',
-                    'Image' => ['type' => 'image', 'key' => 'image', 'width' => 80, 'height' => 80, 'previewClass' => 'rounded-lg shadow-sm', 'fallback' => 'name', 'urlPrefix' => 'public'],
+                    'Image' => ['type' => 'image', 'key' => 'image', 'width' => 100, 'height' => 100, 'previewClass' => 'rounded-lg shadow-sm', 'fallback' => 'name'],
                     'Category' => 'category_name',
                     'Subcategory' => 'subcategory_name',
                     'Stock' => 'stock',
@@ -69,7 +69,7 @@ class ProductTable extends MrCatzDataTablesComponent
                 return $data->category_id === 1;
             })
             ->withColumnIndex('No')
-            ->withColumnImage('Image', 'image', 36, 36, 'rounded-lg', 'name', urlPrefix: 'public', showOn: 'desktop')
+            ->withColumnImage('Image', 'image', 36, 36, 'rounded-lg', 'name')
             ->withColumn('Product', 'products.name', editable: true, rules: 'required|max:255')
             ->withColumn('SKU', 'sku')
         ->withCustomColumn('Category', function ($data, $i) {

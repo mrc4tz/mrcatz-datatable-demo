@@ -15,6 +15,25 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | URL Prefix
+    |--------------------------------------------------------------------------
+    |
+    | Default URL prefix for image columns (withColumnImage) and expand view
+    | image fields (getExpandableView). This value is used when urlPrefix
+    | is not explicitly passed.
+    |
+    | Supported: 'storage', 'public', 'https://...', or '' (empty string)
+    |
+    | - 'storage': asset('storage/' . $value)
+    | - 'public':  asset($value)
+    | - 'https://cdn.example.com': prefix + '/' + $value
+    | - '' (empty string): use DB value as-is (already full URL)
+    |
+    */
+    'url_prefix' => 'public',
+
+    /*
+    |--------------------------------------------------------------------------
     | Icon Set
     |--------------------------------------------------------------------------
     |
@@ -72,8 +91,9 @@ return [
     |
     */
     'form_icons' => [
-        'person' => '<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>',
-        'alternate_email' => '<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"/>',
+        // 'person' => '<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>',
+        // 'mail'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>',
+        // 'link'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/>',
     ],
 
     'custom_icons' => [
