@@ -2986,16 +2986,16 @@
         },
         {
             "name": "mrcatz/datatable",
-            "version": "v1.23.12",
+            "version": "v1.23.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrc4tz/mrcatz-datatables.git",
-                "reference": "acbddc29aa7efec4a37b26b23df1e75379850b73"
+                "reference": "5220ca87ab82829bd17a67b63067787bda10374a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrc4tz/mrcatz-datatables/zipball/acbddc29aa7efec4a37b26b23df1e75379850b73",
-                "reference": "acbddc29aa7efec4a37b26b23df1e75379850b73",
+                "url": "https://api.github.com/repos/mrc4tz/mrcatz-datatables/zipball/5220ca87ab82829bd17a67b63067787bda10374a",
+                "reference": "5220ca87ab82829bd17a67b63067787bda10374a",
                 "shasum": ""
             },
             "require": {
@@ -3048,9 +3048,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mrc4tz/mrcatz-datatables/issues",
-                "source": "https://github.com/mrc4tz/mrcatz-datatables/tree/v1.23.12"
+                "source": "https://github.com/mrc4tz/mrcatz-datatables/tree/v1.23.13"
             },
-            "time": "2026-04-06T02:18:15+00:00"
+            "time": "2026-04-06T02:49:00+00:00"
         },
         {
             "name": "nesbot/carbon",
