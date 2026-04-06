@@ -2474,16 +2474,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.7.13",
+            "version": "v3.7.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "152b5a1a3f9ee93b6887a3bad6ab8e6db035efa5"
+                "reference": "d68e65beb7717eaabef74a1cf63cd1670260ff5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/152b5a1a3f9ee93b6887a3bad6ab8e6db035efa5",
-                "reference": "152b5a1a3f9ee93b6887a3bad6ab8e6db035efa5",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/d68e65beb7717eaabef74a1cf63cd1670260ff5f",
+                "reference": "d68e65beb7717eaabef74a1cf63cd1670260ff5f",
                 "shasum": ""
             },
             "require": {
@@ -2538,7 +2538,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.7.13"
+                "source": "https://github.com/livewire/livewire/tree/v3.7.15"
             },
             "funding": [
                 {
@@ -2546,7 +2546,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-30T22:04:01+00:00"
+            "time": "2026-04-03T13:08:41+00:00"
         },
         {
             "name": "maatwebsite/excel",
@@ -2986,16 +2986,16 @@
         },
         {
             "name": "mrcatz/datatable",
-            "version": "v1.23.0",
+            "version": "v1.23.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrc4tz/mrcatz-datatables.git",
-                "reference": "241e103b30d17844871eedbfcb0c57b9ad231a91"
+                "reference": "e1c3d742e56b8c75a0a6a8975dbef6d952cc9474"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrc4tz/mrcatz-datatables/zipball/241e103b30d17844871eedbfcb0c57b9ad231a91",
-                "reference": "241e103b30d17844871eedbfcb0c57b9ad231a91",
+                "url": "https://api.github.com/repos/mrc4tz/mrcatz-datatables/zipball/e1c3d742e56b8c75a0a6a8975dbef6d952cc9474",
+                "reference": "e1c3d742e56b8c75a0a6a8975dbef6d952cc9474",
                 "shasum": ""
             },
             "require": {
@@ -3048,9 +3048,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mrc4tz/mrcatz-datatables/issues",
-                "source": "https://github.com/mrc4tz/mrcatz-datatables/tree/v1.23.0"
+                "source": "https://github.com/mrc4tz/mrcatz-datatables/tree/v1.23.10"
             },
-            "time": "2026-04-04T00:22:19+00:00"
+            "time": "2026-04-05T08:24:06+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -8309,16 +8309,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "12.5.15",
+            "version": "12.5.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "aeb6899ffdbbf4b4ff5e6b6ebb77b35c51bb6d9a"
+                "reference": "b2429f58ae75cae980b5bb9873abe4de6aac8b58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/aeb6899ffdbbf4b4ff5e6b6ebb77b35c51bb6d9a",
-                "reference": "aeb6899ffdbbf4b4ff5e6b6ebb77b35c51bb6d9a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b2429f58ae75cae980b5bb9873abe4de6aac8b58",
+                "reference": "b2429f58ae75cae980b5bb9873abe4de6aac8b58",
                 "shasum": ""
             },
             "require": {
@@ -8387,7 +8387,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.5.15"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.5.16"
             },
             "funding": [
                 {
@@ -8395,7 +8395,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-03-31T06:41:33+00:00"
+            "time": "2026-04-03T05:26:42+00:00"
         },
         {
             "name": "sebastian/cli-parser",

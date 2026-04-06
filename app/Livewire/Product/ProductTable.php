@@ -73,7 +73,6 @@ class ProductTable extends MrCatzDataTablesComponent
             ->withColumn('Product', 'products.name', editable: true, rules: 'required|max:255')
             ->withColumn('SKU', 'sku')
         ->withCustomColumn('Category', function ($data, $i) {
-
             $sub =  $this->setSearchWord( $data->subcategory_name ? ' / ' . $data->subcategory_name : '');
             return '<span class="text-xs">' .  $this->setSearchWord($data->category_name) . '<span class="text-base-content/40">' . $sub . '</span></span>';
         }, 'categories.name', true)
