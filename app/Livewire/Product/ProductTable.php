@@ -85,9 +85,7 @@ class ProductTable extends MrCatzDataTablesComponent
             $label = ucfirst($data->status);
             return '<span class="badge ' . $badge . ' badge-sm text-white">' . $label . '</span>';
         }, 'products.status', false)
-        ->withCustomColumn('Actions', function ($data, $i) {
-            return MrCatzDataTables::getActionView($data, $i, true, true);
-        });
+        ->withActionColumn('Actions');
     }
 
     public function setFilter()
